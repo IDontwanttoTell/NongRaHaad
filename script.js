@@ -1,3 +1,5 @@
+window.alert("ถ้าหากต้องการย้อนกลับไปคำใบ้อื่น ให้กดปุ่มคำใบ้ซ้ำอีกครั้ง")
+
 function btn1() {
     var element = document.getElementById("content1");
    element.classList.toggle("content1-active");
