@@ -104,21 +104,31 @@
 
 @keyframes change {
     0% {
-        background-color: #00FFFF;
+        background-color: #a7f7f7;
     }
     20% {
-        background-color: #0096FF;
+        background-color: #9fd2f7;
     }
     40% {
         background-color: #A7C7E7;
     }
     60% {
-        background-color: #9d87db;
+        background-color: #b9a8e7;
     }
     80% {
-        background-color: #eb77be;
+        background-color: #e4b0d0;
     }
     100% {
-        background-color: #00FFFF;
+        background-color: #96f3f3;
     }
+}
+
+.image-content2 img {
+    width: 100vw;
+    max-width: 750px;
+}
+
+.image-content2 {
+    width: 100%;
+    background-color: #000;
 }
