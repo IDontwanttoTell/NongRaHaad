@@ -16,7 +16,6 @@ function btn2() {
    element3.classList.toggle("btn1-none");
    var element6 = document.getElementById("btn2");
    element6.classList.toggle("btn2-active");
-
 }
 
 
