@@ -7,8 +7,6 @@ function btn1() {
    element.classList.toggle("content1-active");
    var element4 = document.getElementById("btn2");
    element4.classList.toggle("btn2-none");
-   var element5 = document.getElementById("btn1");
-   element5.className = "btn1-active";
 }
 
 function btn2() {
@@ -16,8 +14,6 @@ function btn2() {
    element1.classList.toggle("content2-active");
    var element3 = document.getElementById("btn1");
    element3.classList.toggle("btn1-none");
-   var element6 = document.getElementById("btn2");
-   element6.className = "btn2-active";
 }
 
 
