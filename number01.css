@@ -146,9 +146,77 @@
     height: 150px;
 }
 
-.commentbox {
-    position: fixed;
-    top: 150px;
-    z-index: 1;
-    margin-left: 10px;
+.animation-text1 {
+    width: 100vw;
+    background: #333333;
+    padding: 35px 0;
+}
+
+h2 {
+    position: relative;
+    font-size: 24px;
+    color: #ffffff;
+    -webkit-text-stroke: 0.3vw #383d52;
+    text-transform: uppercase;
+}
+
+h2::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 20vw;
+    width: 0;
+    height: 100%;
+    color: #ffffff;
+    -webkit-text-stroke: 0vw #323541;
+    border-right: 2px solid #ffffff;
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+}
+
+@keyframes animate {
+    0%,10%,100% {
+        width: 0;
+    }
+    70%,90% {
+        width: 60vw;
+    }
+}
+
+@keyframes ggbeeping {
+    0% {
+        width: 150px;
+        height: auto;
+        top: 0px;
+    }
+
+    50% {
+        width: 200px;
+        height: auto;
+        top: -20px;
+    }
+
+    100% {
+        width: 150px;
+        height: auto;
+        top: 0px;
+    }
+}
+
+
+.gglens {
+    width: 150vpx;
+    animation: ggbeeping ease 2s infinite;
+    position: relative;
+}
+
+.space4 {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    margin-left: 50%;
+    margin-top: 25px;
+    transform: translateX(-50%);
+    vertical-align: middle;
+
 }
